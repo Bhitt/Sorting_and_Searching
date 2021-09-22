@@ -30,7 +30,7 @@ int partition(int[] arr, int left, int right){
 		while(arr[left] < pivot) left++;
 
 		// Find element on right that should be on left
-		while(arr[right] > pivot) right++;
+		while(arr[right] > pivot) right--;
 
 		// Swap elements, and move left and right indices
 		if(left <= right){
